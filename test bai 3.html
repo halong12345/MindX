@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul >
+    </ul>
+    <h1 id = "hd">Sổ xố Hub Đống Đa</h1>
+    <button id= "button"> Dự đoán số (Nhập từ 1 đến 10) </button>
+    <input id="input">
+    
+<script>
+    
+let number = [0,1,2,3,4,5,6,7,8,9,10]
+let button = document.getElementById("button");
+button.addEventListener("click",function(event){
+  for (let i = 0; i <= 10; i++) {
+      const element = number[i];
+if (i==number[8]) {
+    alert("xin chúc mừng bạn đã trúng giải đặc biệt ");
+
+}
+else if (i==number[9]) {
+    alert ("xin chúc mừng bạn đã trúng giải nhất")
+}
+else {
+    alert("chúc bạn may mắn lần sau");
+}
+      
+  };
+ console.log(event);
+});
+</script>
+        
+</script>
+</body>
+</html>
